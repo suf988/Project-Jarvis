@@ -17,6 +17,8 @@ def processCommand(c):
         webbrowser.open('https://facebook.com')
     elif 'open youtube' in c:
         webbrowser.open('https://youtube.com')
+    elif 'open linkedin' in c:
+        webbrowser.open('https://linkedin.com')
 
 if __name__ == "__main__":
     speak("Initializing Jarvis")
