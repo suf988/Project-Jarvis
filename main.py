@@ -28,7 +28,7 @@ def processCommand(c):
     
     # play music:
     elif c.startswith('play'):
-        song = c.split(' ')[1]
+        song = c.split(" ",1)[1]
         link = music[song]
         webbrowser.open(link)
     
