@@ -3,10 +3,12 @@ import webbrowser
 import pyttsx3
 from musicLibrary import music
 import requests
+from openai import OpenAI
 
 recognizer = sr.Recognizer()
 engine = pyttsx3.init()
-newsApiKey = "f513b66ee0364db5a3593ad4f0866664"
+newsApiKey = "enter-your-own-news-api-key"
+openAiApiKey = "enter-your-own-open-ai-api-key" # Open AI api is paid
 
 def speak(text):
     engine.say(text)
@@ -41,6 +43,18 @@ def processCommand(c):
 
             for title in titles:
                 speak(title)
+    
+    # acts as an AI assistant:
+    else:
+        client = OpenAI(api_key=openAiApiKey)
+        completion = client.chat.completions.create(
+            model = "gpt-4o-mini",
+            messages=[
+                {"role": "system", "content": "You are a helpful assistant named Jarvis, like Alexa and Google Cloud"},
+                {"role": "user", "content": c}
+            ]
+        )
+        speak(completion.choices[0].message)
 
 if __name__ == "__main__":
     speak("Initializing Jarvis")
