@@ -1,12 +1,11 @@
 music = {
-    'firworks': 'https://www.youtube.com/watch?v=QGJuMBdaqIw',
-    'bon apetite': 'https://www.youtube.com/watch?v=dPI-mRFEIH0',
-    'blank space': 'https://www.youtube.com/watch?v=e-ORhEE9VVg',
-    'calm down': 'https://www.youtube.com/watch?v=WcIcVapfqXw',
+    'baby': 'https://www.youtube.com/watch?v=kffacxfA7G4',
+    'friends': 'https://www.youtube.com/watch?v=jzD_yyEcp0M',
+    'espresso': 'https://www.youtube.com/watch?v=eVli-tstM5E',
+    'millionaire': 'https://www.youtube.com/watch?v=XO8wew38VM8',
     'despacito': 'https://www.youtube.com/watch?v=kJQP7kiw5Fk',
-    'shape of you': 'https://www.youtube.com/watch?v=JGwWNGJdvx8',
+    'senorita': 'https://www.youtube.com/watch?v=Pkh8UtuejGw',
     'closer': 'https://www.youtube.com/watch?v=PT2_F-1esPk',
     'perfect': 'https://www.youtube.com/watch?v=2Vv-BfVoq4g',
-    'waka waka': 'https://www.youtube.com/watch?v=pRpeEdMmmQ0'
-    
+    'believer': 'https://www.youtube.com/watch?v=7wtfhZwyrcc'
 }
