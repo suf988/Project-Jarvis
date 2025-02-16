@@ -54,11 +54,11 @@ def processCommand(c):
         completion = client.chat.completions.create(
             model = "gpt-4o-mini",
             messages=[
-                {"role": "system", "content": "You are a helpful assistant named Jarvis, like Alexa and Google Cloud"},
+                {"role": "system", "content": "You are a helpful assistant named Jarvis, just like Alexa and Google Cloud. Please give short."},
                 {"role": "user", "content": c}
             ]
         )
-        speak(completion.choices[0].message)
+        speak(completion.choices[0].message.content)
 
 if __name__ == "__main__":
     speak("Initializing Jarvis")
