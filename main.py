@@ -29,8 +29,12 @@ def processCommand(c):
     # play music:
     elif c.startswith('play'):
         song = c.split(" ",1)[1]
-        link = music[song]
-        webbrowser.open(link)
+        link = music.get(song)
+        if link:
+            webbrowser.open(link)
+        else:
+            available_songs = ", ".join(music.keys())
+            speak(f"Sorry, I don't have {song} song in my playlist. The songs I have are {available_songs}")
     
     # tell the news:
     elif 'news' in c:
